@@ -6,7 +6,7 @@ const postcss = require('postcss');
 const typography = require('..');
 
 const read = fs.readFileSync;
-const join = path.join;
+const {join} = path;
 
 const ROOT = join(__dirname, 'fixtures');
 
@@ -51,7 +51,6 @@ test('fixtures', t => {
 		const filepath = join(ROOT, fixture);
 		const output = read(join(filepath, 'output.css'), 'utf-8');
 		const input = read(join(filepath, 'input.css'), 'utf-8');
-		// eslint-disable-next-line import/no-dynamic-require
 		const config = require(join(filepath, 'config.js'));
 		const processor = postcss([typography(config), prettify()]);
 		const result = processor.process(input).css;
