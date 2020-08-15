@@ -1,0 +1,10 @@
+@typography {
+	h1 {
+		margin: rhythm(2) 0;
+	}
+}
+
+.text {
+	margin: rhythm(1 / 2) rhythm( -2 );
+	padding: rhythm(1 + 2) rhythm(2.1 * 1/3);
+}
