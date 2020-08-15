@@ -1,5 +1,5 @@
 html {
-    font: 100%/1.5em 'georgia','serif';
+    font: 100%/1.45 'georgia',serif;
     box-sizing: border-box;
     overflow-y: scroll;
 }
@@ -14,7 +14,7 @@ html {
 }
 body {
     color: hsla(0,0%,0%,0.8);
-    font-family: 'georgia','serif';
+    font-family: 'georgia',serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -32,7 +32,7 @@ img {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 h1 {
     margin-left: 0;
@@ -42,13 +42,13 @@ h1 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     color: inherit;
-    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans-serif';
+    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 2rem;
-    line-height: 2.25rem;
+    line-height: 1.1;
 }
 h2 {
     margin-left: 0;
@@ -58,13 +58,13 @@ h2 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     color: inherit;
-    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans-serif';
+    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.51572rem;
-    line-height: 2.25rem;
+    line-height: 1.1;
 }
 h3 {
     margin-left: 0;
@@ -74,13 +74,13 @@ h3 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     color: inherit;
-    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans-serif';
+    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.31951rem;
-    line-height: 2.25rem;
+    line-height: 1.1;
 }
 h4 {
     margin-left: 0;
@@ -90,13 +90,13 @@ h4 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     color: inherit;
-    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans-serif';
+    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.1;
 }
 h5 {
     margin-left: 0;
@@ -106,13 +106,13 @@ h5 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     color: inherit;
-    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans-serif';
+    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.87055rem;
-    line-height: 1.5rem;
+    line-height: 1.1;
 }
 h6 {
     margin-left: 0;
@@ -122,13 +122,13 @@ h6 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     color: inherit;
-    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans-serif';
+    font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.81225rem;
-    line-height: 1.5rem;
+    line-height: 1.1;
 }
 hgroup {
     margin-left: 0;
@@ -138,29 +138,29 @@ hgroup {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 ul {
-    margin-left: 1.5rem;
+    margin-left: 1.45rem;
     margin-right: 0;
     margin-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     list-style-position: outside;
     list-style-image: none;
 }
 ol {
-    margin-left: 1.5rem;
+    margin-left: 1.45rem;
     margin-right: 0;
     margin-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     list-style-position: outside;
     list-style-image: none;
 }
@@ -172,7 +172,7 @@ dl {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 dd {
     margin-left: 0;
@@ -182,7 +182,7 @@ dd {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 p {
     margin-left: 0;
@@ -192,7 +192,7 @@ p {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 figure {
     margin-left: 0;
@@ -202,7 +202,7 @@ figure {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 pre {
     margin-left: 0;
@@ -212,9 +212,9 @@ pre {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     font-size: 0.85rem;
-    line-height: 1.5rem;
+    line-height: 1.45rem;
 }
 table {
     margin-left: 0;
@@ -224,9 +224,9 @@ table {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.45rem;
     border-collapse: collapse;
     width: 100%;
 }
@@ -238,17 +238,17 @@ fieldset {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 blockquote {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1.45rem;
+    margin-right: 1.45rem;
     margin-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 form {
     margin-left: 0;
@@ -258,7 +258,7 @@ form {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 noscript {
     margin-left: 0;
@@ -268,7 +268,7 @@ noscript {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 iframe {
     margin-left: 0;
@@ -278,7 +278,7 @@ iframe {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 hr {
     margin-left: 0;
@@ -288,7 +288,7 @@ hr {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: calc(1.5rem - 1px);
+    margin-bottom: calc(1.45rem - 1px);
     background: hsla(0,0%,0%,0.2);
     border: none;
     height: 1px;
@@ -301,7 +301,7 @@ address {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.45rem;
 }
 b {
     font-weight: bold;
@@ -316,7 +316,7 @@ th {
     font-weight: bold;
 }
 li {
-    margin-bottom: calc(1.5rem / 2);
+    margin-bottom: calc(1.45rem / 2);
 }
 ol li {
     padding-left: 0;
@@ -325,14 +325,14 @@ ul li {
     padding-left: 0;
 }
 li > ol {
-    margin-left: 1.5rem;
-    margin-bottom: calc(1.5rem / 2);
-    margin-top: calc(1.5rem / 2);
+    margin-left: 1.45rem;
+    margin-bottom: calc(1.45rem / 2);
+    margin-top: calc(1.45rem / 2);
 }
 li > ul {
-    margin-left: 1.5rem;
-    margin-bottom: calc(1.5rem / 2);
-    margin-top: calc(1.5rem / 2);
+    margin-left: 1.45rem;
+    margin-bottom: calc(1.45rem / 2);
+    margin-top: calc(1.45rem / 2);
 }
 blockquote *:last-child {
     margin-bottom: 0;
@@ -344,19 +344,19 @@ p *:last-child {
     margin-bottom: 0;
 }
 li > p {
-    margin-bottom: calc(1.5rem / 2);
+    margin-bottom: calc(1.45rem / 2);
 }
 code {
     font-size: 0.85rem;
-    line-height: 1.5rem;
+    line-height: 1.45rem;
 }
 kbd {
     font-size: 0.85rem;
-    line-height: 1.5rem;
+    line-height: 1.45rem;
 }
 samp {
     font-size: 0.85rem;
-    line-height: 1.5rem;
+    line-height: 1.45rem;
 }
 abbr {
     border-bottom: 1px dotted hsla(0,0%,0%,0.5);
@@ -381,10 +381,10 @@ td,th {
     -moz-font-feature-settings: "tnum";
     -ms-font-feature-settings: "tnum";
     -webkit-font-feature-settings: "tnum";
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.75rem;
-    padding-bottom: calc(0.75rem - 1px);
+    padding-left: 0.96667rem;
+    padding-right: 0.96667rem;
+    padding-top: 0.725rem;
+    padding-bottom: calc(0.725rem - 1px);
 }
 th:first-child,td:first-child {
     padding-left: 0;
