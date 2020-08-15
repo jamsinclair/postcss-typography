@@ -44,19 +44,19 @@ test('typography()', t => {
 	t.end();
 });
 
-test('fixtures', t => {
-	fixtures.filter(filepath => {
+test('fixtures', async t => {
+	const tests = fixtures.filter(filepath => {
 		return filepath.indexOf('.') !== 0;
-	}).forEach(fixture => {
+	}).map(async fixture => {
 		const filepath = join(ROOT, fixture);
 		const output = read(join(filepath, 'output.css'), 'utf-8');
 		const input = read(join(filepath, 'input.css'), 'utf-8');
 		const config = require(join(filepath, 'config.js'));
 		const processor = postcss([typography(config), prettify()]);
-		const result = processor.process(input).css;
+		const result = await processor.process(input).css;
 
-		t.deepEqual(result, output, 'should work on `' + fixture + '`');
+		t.deepEqual(result, output, `should work on \`${fixture}\``);
 	});
 
-	t.end();
+	await Promise.all(tests);
 });
