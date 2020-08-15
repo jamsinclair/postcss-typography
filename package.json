@@ -30,11 +30,14 @@
   "bugs": "https://github.com/barrythepenguin/postcss-typography/issues",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^7.0.32",
     "typography": "^0.16.19"
+  },
+  "peerDependencies": {
+    "postcss": "^7.0.32"
   },
   "devDependencies": {
     "nyc": "^15.1.0",
+    "postcss": "^7.0.32",
     "tap-diff": "^0.1.1",
     "tape": "^5.0.1",
     "xo": "^0.33.0"
