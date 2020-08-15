@@ -11,12 +11,10 @@
     "node": ">=10"
   },
   "scripts": {
-    "build-md": "remark . --quiet --frail",
-    "build": "npm run build-md",
     "lint": "xo",
     "test-api": "node test/index.js | tap-diff",
-    "test-coverage": "istanbul cover test/index.js",
-    "test": "npm run build && npm run lint && npm run test-coverage"
+    "test-coverage": "nyc npm test-api",
+    "test": "npm run lint && npm run test-coverage"
   },
   "keywords": [
     "css",
