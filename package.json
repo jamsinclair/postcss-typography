@@ -13,7 +13,7 @@
   "scripts": {
     "lint": "xo",
     "test-api": "node test/index.js | tap-diff",
-    "test-coverage": "nyc npm test-api",
+    "test-coverage": "nyc npm run test-api",
     "test": "npm run lint && npm run test-coverage"
   },
   "keywords": [
