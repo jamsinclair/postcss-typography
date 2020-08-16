@@ -1,5 +1,5 @@
 {
-  "name": "postcss-typography",
+  "name": "postcss-typography2",
   "version": "2.0.0-2",
   "description": "A postcss plugin for typography.js",
   "main": "index.js",
@@ -22,12 +22,12 @@
     "postcss",
     "postcss-plugin"
   ],
-  "author": "Jonathan Haines <jonno.haines@gmail.com> (http://barrythepenguin.github.io)",
+  "author": "Jamie Sinclair <jamsinclairnz@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/barrythepenguin/postcss-typography.git"
+    "url": "https://github.com/jamsinclair/postcss-typography2.git"
   },
-  "bugs": "https://github.com/barrythepenguin/postcss-typography/issues",
+  "bugs": "https://github.com/jamsinclair/postcss-typography2/issues",
   "license": "MIT",
   "dependencies": {
     "typography": "^0.16.19"
