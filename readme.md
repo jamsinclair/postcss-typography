@@ -1,63 +1,74 @@
-# postcss-typography [![Build Status][build-badge]][build-status] [![Coverage Status][coverage-badge]][coverage-status]
+# postcss-typography2
 
-A postcss plugin for [**typography.js**][typography]
+A postcss plugin for [**typography.js**](https://github.com/KyleAMathews/typography.js)
+
+Forked from [BarryThePenguin/postcss-typography](https://github.com/BarryThePenguin/postcss-typography)
+- Updates dependency versions
+- Reports warning when `@typography` rule not present in your css
+- Adds support for using rhythm() in your css
+
 
 ## Installation
 
-[npm][]:
-
 ```bash
-npm install postcss-typography
+npm install postcss-typography2
 ```
 
 ## Usage
 
-Dependencies:
+Add to your `postcss.config.js`
 
 ```javascript
-var postcss = require('postcss');
-var typography = require('postcss-typography');
+const typography = require('postcss-typography2');
+const Alton = require('typography-theme-alton').default;
+
+module.exports = {
+  plugins: [
+    typography(Alton);
+  ]
+}
 ```
 
-Use:
+Or manually with:
 
 ```javascript
-var processor = postcss().use(typography(options));
+const postcss = require('postcss');
+const typography = require('postcss-typography2');
+const Alton = require('typography-theme-alton').default;
+
+const result = postcss([plugin(Alton)]).process(input);
 ```
 
-Process:
-
-```javascript
-processor.process(css).then(function (result) {
-  console.log(result.css);
-});
-```
-
-Yields:
+Next in your CSS add the `@typography` “at-rule”
 
 ```css
-* {
-  ...
+@typography;
+```
+
+The plugin will replace this with the final typography css rules. You can include overrides here as well.
+
+```css
+@typography {
+  h1,h2,h3 {
+    color: blue;
+  }
 }
-*:before {
-  ...
+```
+
+Rhythm units can also be used throughout your css:
+
+```css
+.text {
+  margin: rhythm(1.5) 0;
 }
-*:after {
-  ...
+```
+
+The plugin will replace this with the calculated result
+
+```css
+.text {
+  margin: 2.9rem 0;
 }
-body {
-  ...
-}
-img {
-  ...
-}
-h1 {
-  ...
-}
-h2 {
-  ...
-}
-...
 ```
 
 ## API
@@ -66,7 +77,11 @@ h2 {
 
 ### `options`
 
-Options to pass through to the [typography api][typography#api]
+Options to pass through to the [typography api](https://github.com/KyleAMathews/typography.js#api)
+
+You will likely be passing a Typography theme, [there are over 30 available!](https://github.com/KyleAMathews/typography.js#published-typographyjs-themes)
+```
+```
 
 ### `@typography`
 
@@ -74,26 +89,12 @@ This plugin will replace the `@typography` “at-rule” with the output of
 typography.js.  Any declarations within the at-rule block will be merged with
 the final css output.
 
+### `rhythm(unit)`
+
+This plugin will replace `rhythm()` functions with the calculated rhythm unit based
+on your typography.js config. Only basic math arithmetic is allowed: division, multiplication, add and subtract. CSS custom properties and variables (sass, less etc.) will not be parsed.
+
 ## License
 
-[MIT][license] © [Jonathan Haines][author]
+[MIT](LICENSE) © Jamie Sinclair
 
-<!-- Definitions -->
-
-[build-badge]: https://img.shields.io/travis/BarryThePenguin/postcss-typography.svg
-
-[build-status]: https://travis-ci.org/BarryThePenguin/postcss-typography
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/BarryThePenguin/postcss-typography.svg
-
-[coverage-status]: https://codecov.io/github/BarryThePenguin/postcss-typography
-
-[license]: LICENSE
-
-[author]: http://barrythepenguin.github.io
-
-[npm]: https://docs.npmjs.com/cli/install
-
-[typography]: https://github.com/KyleAMathews/typography.js
-
-[typography#api]: https://github.com/KyleAMathews/typography.js#api
