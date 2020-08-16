@@ -80,8 +80,6 @@ The plugin will replace this with the calculated result
 Options to pass through to the [typography api](https://github.com/KyleAMathews/typography.js#api)
 
 You will likely be passing a Typography theme, [there are over 30 available!](https://github.com/KyleAMathews/typography.js#published-typographyjs-themes)
-```
-```
 
 ### `@typography`
 
